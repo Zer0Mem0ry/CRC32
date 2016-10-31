@@ -107,8 +107,8 @@ unsigned int CRC32(void *pData, size_t iLen)
 
 int main()
 {
-	char* teststr = "kill ur self pls";
-	unsigned int Hash = CRC32(&MessageBoxA, 4);
+	char* teststr = "Simple Test String!";
+	unsigned int Hash = CRC32(teststr, strlen(teststr));
 
 	cout << "0x" << uppercase << hex << Hash;
 	cin.get();
